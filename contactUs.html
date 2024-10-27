@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/file2.png " />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="contactus/contactus.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="styles/logo.css">
+</head>
+<body>
+    <a href="index.html"><img src="images/Logo.png" class="logo" alt="Crypto Live Logo" /></a>
+    <img src="../images/backg.png" alt="Background photo" style="display: none;">
+    
+    <div id="container">
+
+        <nav>
+            <ol>
+                <li id="li26"> <a href="contactUs.html"> Contact Us</a></li>
+                <li class="arrow"> < </li>
+                <li><a href="index.html">Home</a></li>
+            </ol>
+        </nav>
+        
+        <form id="contactForm">
+            <h1> Connect Us</h1>
+            <p class="p34"> First Name</p>
+            <label for="firstName">
+                <input type="text" placeholder="Enter Your First Name" id="firstName" required onchange="checkFromValidity()" />
+            </label>
+            <br>
+            <p class="p34">Phone Number</p>
+            <label for="phone">
+                <input type="number" id="phone" placeholder="Enter Your Phone Number" required onchange="checkFromValidity()" />
+            </label>
+            <br>
+            <p class="p34">Email</p>
+            <label for="email">
+                <input type="email" id="email" placeholder="Enter Your Email" required onchange="checkFromValidity()" />
+            </label>
+            <br>
+            <p class="p34">Birth Date</p>
+            <label for="birthdate">
+                <input type="date" id="birthdate" placeholder="Enter Your Birth Date" required onchange="checkFromValidity()" />
+            </label>
+            <label for="male">
+                <input type="radio" id="male" name="gender" required onchange="onMaleRadioChangeAndFemale()" /> &nbsp;
+            </label>
+            <p class="p34" id="maleId">Male</p>
+            <br>
+            <label for="female">
+                <input type="radio" id="female" name="gender" required onchange="onMaleRadioChangeAndFemale()" /> &nbsp;
+            </label>
+            <p class="p34" id="femaleId">Female</p>
+
+            <!-- תמונות כפתורי הרדיו -->
+            <div id="genderImages">
+                <img src="images/male.png" id="maleImage" alt="Male Icon" />
+                <img src="images/female.png" id="femaleImage" alt="Female Icon" />
+
+            </div>
+
+            <!-- צ'קבוקסים עם אירוע onchange -->
+            <label for="service">
+                <input type="checkbox" id="service" onchange="onServiceCheckboxChange()" />&nbsp;I agree to receive the latest updates about Crypto Live 
+            </label>
+
+            <label for="service2">
+                <input type="checkbox" id="service2" onchange="onService2CheckboxChange()" />&nbsp;I agree to receive Promotional offers from Crypto Live 
+            </label>
+            <br>
+
+            <!-- תמונות הצ'קבוקסים -->
+            <div id="serviceImages">
+                <img src="images/updated.png" id="updateImage" alt="Update Icon" />
+                <img src="images/offer.png" id="offerImage" alt="Offer Icon" />
+            </div>
+
+            <input type="submit" value="submit" id="submit" disabled />
+        </form>
+        <footer>
+            <div class="footerCointainer">
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutUs.html">About us</a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="infoCoins.html">Bitcoin</a></li>
+                        <li><a href="dogeCoin.html">Dogecoin</a></li>
+                        <li><a href="ethCoin.html">Ethereum</a></li>
+                        <li><a href="sitemap.html">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+       
+    <script src="jScripts/interactivity.js"></script>
+</body>
+</html>

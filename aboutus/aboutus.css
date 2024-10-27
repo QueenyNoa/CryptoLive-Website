@@ -1,0 +1,166 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    
+    
+}
+header{
+ padding-bottom: 70px;
+}
+
+body {
+    background-image: url('../images/backg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+    color: white;
+    direction: rtl;
+}
+
+nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+nav ol{
+  list-style-type:none;
+  padding: 5px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+nav li{
+  position: relative;
+}
+nav li a{
+  text-decoration: none;
+  color: #000000;
+  text-decoration-style:double;
+  display: inline-block;
+}
+
+
+
+main #contentText {
+  color: white; 
+  margin:0 auto; 
+  padding: 20px; 
+  font-family: "Poppins", sans-serif; 
+  box-sizing: border-box; 
+  position: relative; 
+  background-color: rgba(0, 0, 0, 0.2);  
+  border-radius: 10px;
+  width: 980px;
+  height:auto;
+  margin-top: 50px; 
+  text-align: center;
+}
+#p52{
+  margin-right: 60px;
+}
+
+footer{
+  color: white; 
+  margin:0 auto; 
+  padding: 0; 
+  font-family: "Poppins", sans-serif; 
+  box-sizing: border-box; 
+  position: relative; 
+  padding-top: 90px; 
+}
+
+
+#container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#logoHit{
+  height: 100px;
+  width: 200px;
+  display:flex;
+  margin-right: 400px;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+#p39{
+  margin-right: 415px;
+  z-index: 1;
+}
+
+a{
+  color:rgb(95, 248, 159)
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.8); 
+  width: 100%;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 10;
+}
+.footerCointainer {
+  width: 100%;
+  padding: 20px 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+
+}
+.footerNav {
+  margin: 20px 0;
+}
+.footerNav ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+}
+.footerNav ul li{
+  list-style:none;
+}
+.footerNav ul li a{
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font: size 1.3em;
+  opacity:0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  opacity:1;
+}
+.credits {
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 1.2em; 
+  color: white;
+}
+
+.credits a {
+  color:rgb(95, 248, 159) ; 
+  text-decoration: none; 
+}
+
+.credits a:hover {
+  text-decoration: underline; 
+}
